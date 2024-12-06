@@ -38,10 +38,16 @@ nav{
     font-size: 1.5rem;
   }
 
-  span{
+  p{
     font-size: 2rem;
     font-weight: bold;
     text-align: end;
+    color: ${(props) => props.theme["green-400"]};
+    
+    span{
+     color: ${(props) => props.theme["black-200"]};
+    
+    }
   }
   ul{
     display: flex;
@@ -59,6 +65,20 @@ nav{
 }
 main{
   grid-area: main;
+  
+  display:flex;
+  gap: 10rem;
+  align-items: end;
+  padding: 0rem 0rem 8rem 16rem;
+
+  :nth-child(1){
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  :nth-child(2){
+    font-size: 1.8fr;
+    padding-bottom: 0.8rem;
+  }
 }
 
 section{

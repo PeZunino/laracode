@@ -7,18 +7,29 @@ export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <nav>
-        <span>laracode</span>
+        <p>
+          lara<span>code</span>
+        </p>
         <ul>
-          <a href="">home</a>
-          <a href="">curriculum</a>
-          <a href="">faq</a>
-          <a href="">contact</a>
+          <a href="#">home</a>
+          <a href="#">curriculum</a>
+          <a href="#">faq</a>
+          <a href="#">contact</a>
         </ul>
         <Button />
       </nav>
+
       <main>
-        <span>A laravel learning platform</span>
+        <span>
+          A Laravel <br />
+          Learning Platform
+        </span>
+        <span>
+          It’s never been a better time to become a <br />
+          Laravel developer.
+        </span>
       </main>
+
       <section>console</section>
       <footer>footer</footer>
       <GlobalStyle />
