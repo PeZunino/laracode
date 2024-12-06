@@ -31,9 +31,12 @@ nav{
   display:grid;
   grid-template-columns: 1fr 3fr 1fr;
  
-  font-family: 'Inconsolata',  sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
+  >*{
+
+    font-family: 'Inconsolata',  sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
 
   span{
     font-size: 2rem;

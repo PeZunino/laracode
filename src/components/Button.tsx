@@ -1,3 +1,5 @@
+import { ButtonContainer } from "./Button.styles";
+
 export function Button() {
-  return <button>join us</button>;
+  return <ButtonContainer>join today</ButtonContainer>;
 }
