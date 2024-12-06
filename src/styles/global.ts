@@ -132,7 +132,14 @@ section{
 }
 footer{
   grid-area: footer;
+  padding: 0rem 16rem;
   background-color: ${(props) => props.theme["black-100"]};
+  align-content: center;
+  ul{
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 

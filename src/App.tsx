@@ -3,7 +3,11 @@ import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
 import { Button } from "./components/Button";
 import cursorFill from "./assets/cursor-fill.svg";
-
+import airbnbLogo from "./assets/airbnb_logo.svg";
+import appleLogo from "./assets/apple_logo.svg";
+import teslaLogo from "./assets/tesla_logo.svg";
+import stripeLogo from "./assets/stripe_logo.svg";
+import spotifyLogo from "./assets/spotify_logo.svg";
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
@@ -54,7 +58,15 @@ export function App() {
           <img src={cursorFill} />
         </div>
       </section>
-      <footer>footer</footer>
+      <footer>
+        <ul>
+          <img src={teslaLogo} alt="" />
+          <img src={appleLogo} alt="" />
+          <img src={airbnbLogo} alt="" />
+          <img src={spotifyLogo} alt="" />
+          <img src={stripeLogo} alt="" />
+        </ul>
+      </footer>
       <GlobalStyle />
     </ThemeProvider>
   );
