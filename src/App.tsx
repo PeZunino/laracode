@@ -25,12 +25,23 @@ export function App() {
           Learning Platform
         </span>
         <span>
-          It’s never been a better time to become a <br />
+          It's never been a better time to become a <br />
           Laravel developer.
         </span>
       </main>
 
-      <section>console</section>
+      <section>
+        <ul>
+          <span>console&gt; </span>
+          <span>console&gt; </span>
+          <span>console&gt; </span>
+          <span>console&gt; </span>
+          <span>console&gt; </span>
+        </ul>
+        <p>
+          git clone la<span>racode</span>
+        </p>
+      </section>
       <footer>footer</footer>
       <GlobalStyle />
     </ThemeProvider>

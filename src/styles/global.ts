@@ -41,7 +41,8 @@ nav{
   p{
     font-size: 2rem;
     font-weight: bold;
-    text-align: end;
+    padding-left: 16rem;
+
     color: ${(props) => props.theme["green-400"]};
     
     span{
@@ -76,7 +77,7 @@ main{
     font-weight: bold;
   }
   :nth-child(2){
-    font-size: 1.8fr;
+    font-size: 1.8rem;
     padding-bottom: 0.8rem;
   }
 }
@@ -84,6 +85,41 @@ main{
 section{
   grid-area: section;
   background-color: ${(props) => props.theme["green-100"]};
+
+  display: grid;
+  grid-template-columns: auto auto 1.5fr;
+
+  overflow: hidden;
+
+  padding-left: 16rem;
+
+  font-family: 'Inconsolata',  sans-serif;
+  font-size: 4.1rem;
+  font-weight: bold;
+  ul{
+    display: flex;
+    flex-direction: column;
+    span {
+      opacity: 30%;
+    }
+    span:nth-child(3){
+      opacity: 100%;
+    }
+    span:not(:last-child){
+      margin-bottom: 2rem;
+    }
+  }
+  p{
+    padding-left: 4rem;
+    align-self: center; 
+    span{
+      opacity: 30%;
+    }
+  }
+  >*{
+    position: relative;
+    top: -1.5rem;
+  }
 }
 footer{
   grid-area: footer;
