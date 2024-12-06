@@ -1,5 +1,22 @@
-import { ButtonContainer } from "./Button.styles";
+import { ButtonContainer, ButtonVariant } from "./Button.styles";
 
-export function Button() {
-  return <ButtonContainer>join today</ButtonContainer>;
+interface ButtonProps {
+  variant?: ButtonVariant;
+  text: string;
+  w: number;
+  h: number;
+  fontSize: number;
+}
+export function Button({
+  variant = "primary",
+  text,
+  h,
+  w,
+  fontSize,
+}: ButtonProps) {
+  return (
+    <ButtonContainer fontSize={fontSize} h={h} w={w} variant={variant}>
+      {text}
+    </ButtonContainer>
+  );
 }

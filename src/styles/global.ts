@@ -27,7 +27,7 @@ body, input, textarea, button {
 nav{
   grid-area: navbar;
   align-items: center;
-  
+  background-color: ${(props) => props.theme["white-200"]};
   display:grid;
   grid-template-columns: 1fr 3fr 1fr;
  
@@ -71,6 +71,7 @@ main{
   gap: 10rem;
   align-items: end;
   padding: 0rem 0rem 8rem 16rem;
+  background-color: ${(props) => props.theme["white-200"]};
 
   :nth-child(1){
     font-size: 5rem;
@@ -114,6 +115,14 @@ section{
     align-self: center; 
     span{
       opacity: 30%;
+    }
+  }
+  div{
+    align-self: center; 
+    padding-left: 10rem;
+    img{
+      position: absolute;
+      bottom: -7rem;
     }
   }
   >*{
