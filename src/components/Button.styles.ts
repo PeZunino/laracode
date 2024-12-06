@@ -11,7 +11,7 @@ interface ButtonContainerProps {
 export const ButtonContainer = styled.button<ButtonContainerProps>`
   width: ${(props) => props.w}rem;
   height: ${(props) => props.h}rem;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   box-shadow: 3px 5px 5px black;
   font-weight: bold;
